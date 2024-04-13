@@ -5,6 +5,15 @@ body,
 body {
     line-height: 1;
 }
+.profile-image{
+    width: 50vw;
+}
+@media screen and (max-width: 700px){
+    .midem {display:none}
+}
+.midem img{
+    width: 100%;
+}
 div,
 span,
 object,
@@ -104,7 +113,7 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5em;
-  color: #5dc100;
+  color: #ff9100;
   scroll-behavior: smooth;
 }
 .swiper-container {
@@ -175,9 +184,22 @@ section .container {
 .favorite .container {
     display: flex;
     justify-content: space-between;
+   
+}
+@media (max-width: 700px) {
+    .favorite .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 .favorite .container .item {
-    width: 30%;
+    width: 32%;
+}
+@media (max-width: 700px) {
+    .favorite .container .item {
+        width: 100%;
+    }
 }
 .favorite .container .item-title {
     font-weight: bold;
@@ -196,6 +218,9 @@ section .container {
     height: 400px;
     object-fit: cover;
     object-position: center;
+    background: 
+        url(file:///C:/Users/sugai/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/bibai/images/606a12839d7f7d3bc934f09de145beb9.png) no-repeat bottom right / 50% auto,
+        url(file:///C:/Users/sugai/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/bibai/images/winter.jpg) no-repeat center center / cover;
 }
 .video .container iframe {
     width: 100%;
